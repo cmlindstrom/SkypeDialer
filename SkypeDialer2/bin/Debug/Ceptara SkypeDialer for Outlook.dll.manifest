@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="Ceptara SkypeDialer for Outlook.dll" version="1.0.0.0" publicKeyToken="621f09c363583590" language="neutral" processorArchitecture="x86" type="win32" />
+  <description xmlns="urn:schemas-microsoft-com:asm.v1">Ceptara SkypeDialer for Outlook</description>
+  <application />
+  <entryPoint>
+    <co.v1:customHostSpecified />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.Outlook" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.v4.0.Framework" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.Runtime" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ceptara Library.dll" size="196096">
+      <assemblyIdentity name="Ceptara Library" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>koq1tLbzIOrOjBWd+NnVHNRM8VI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ceptara SkypeDialer for Outlook.dll" size="338944">
+      <assemblyIdentity name="Ceptara SkypeDialer for Outlook" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>dz7S8H78y0EgYgyIlJRBm4IEXQA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.SKYPE4COMLib.dll" size="169984">
+      <assemblyIdentity name="Interop.SKYPE4COMLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>6cuLdR078uqz8MxS7Few/sgS3lc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" size="32664">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>CtnCtseaMyfROIGe0ENdGO6arHg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll" size="49048">
+      <assemblyIdentity name="Microsoft.Office.Tools.Outlook.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Z2LMwub6uJYcSN1VkUMhJr/zdU8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.Net20.dll" size="387584">
+      <assemblyIdentity name="Newtonsoft.Json.Net20" version="3.5.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>yVYiwgodeEvvwVinFMYqQz1YhtA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Ceptara SkypeDialer for Outlook.dll.config" size="2312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kPeUU28pn2dPa4TEOjSXdgllKTY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="UI\Ribbon Menus\Contact\mnuContactRibbonRewrite.xml" size="3127" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/J06Q8u95I1T2o3gDpM39GdCPI8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <vstav3:addIn xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
+    <vstav3:entryPointsCollection>
+      <vstav3:entryPoints>
+        <vstav3:entryPoint class="SkypeDialer2.ThisAddIn">
+          <assemblyIdentity name="Ceptara SkypeDialer for Outlook" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+        </vstav3:entryPoint>
+      </vstav3:entryPoints>
+    </vstav3:entryPointsCollection>
+    <vstav3:update enabled="true">
+      <vstav3:expiration maximumAge="7" unit="days" />
+    </vstav3:update>
+    <vstav3:application>
+      <vstov4:customizations xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">
+        <vstov4:customization>
+          <vstov4:appAddIn application="Outlook" loadBehavior="3" keyName="Ceptara SkypeDialer for Outlook">
+            <vstov4:friendlyName>Ceptara SkypeDialer for Outlook</vstov4:friendlyName>
+            <vstov4:description>Ceptara SkypeDialer for Outlook</vstov4:description>
+          </vstov4:appAddIn>
+        </vstov4:customization>
+      </vstov4:customizations>
+    </vstav3:application>
+  </vstav3:addIn>
+<publisherIdentity name="CN=&quot;Ceptara, LLC&quot;, O=&quot;Ceptara, LLC&quot;, STREET=PO Box 12549, L=Mill Creek, S=WA, PostalCode=98082, C=US" issuerKeyHash="1ec5b12c7d87da02687c25bc0c07843fb6cfdef1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>bJeHiS+0+59ezjddudV+75Ihm0E=</DigestValue></Reference></SignedInfo><SignatureValue>lBhueUZpl3RzXdJ8Bf6Gp8TOWTIw8gSHDYzMV57fVfxWiZH8PLIKzhPGTP883aCsG1AC5anJF+7GHxAPovZYQ70+EwuUN/zs1iAfZf5r7/9LzosvXsOr81wX1p7xPKkbDeJb1CUDY8ZzLed8z8YSPJ20la6TFGyuc8jejvzDKlm9rUqJnYPdhbvZ3tiAB+kb0B9rMleGvjH7l99kJVq34H3IW8bBClY/ABn6KnvNQd7QdiE1I0TQL6ClazRxgCIhCyNuU8Sf6esGQcvJ4AbXAoLDkMI1jXpuCxK3rQyAyh++5NXVdvdqBV9iP/YRMp3/PBkl8UBc62xsQBywGGsyBQ==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>lmHnECGoosmDK74xf03q1UVCpU+DCXjC+FH9q0QR4/+DthrDHCpvHBbagFHWaCtDbnBMa4EefNOF/p7hmBFWz4rZ2PzEYtqX6NR0FutkzOWIvRMwoUudZ4vqGL3KrbzKBG81n6m1S3gqGrJXai2kxH8Byuww7hn9w5+rNEZMGhlGCXHFQKBSzMmKzEf4d/waNcSB5jUPK+UCQHGX2nDCf7Ac0LVk1EZpHYxGt9LGcMQoMbulwu3kxY6/NXTnWB/tdbUXVe+iLqYcTZJomzznsu3x120i4ESzLskMh6BbpmTYOHTC9Zv6GdpqfMUGpTVDd96N7MFH9xbK8Xp4jdBo2w==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="419b2192ef7ed5b95d37ce5e9ffbb42f8987976c" Description="" Url=""><as:assemblyIdentity name="Ceptara SkypeDialer for Outlook.dll" version="1.0.0.0" publicKeyToken="621f09c363583590" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN="Ceptara, LLC", O="Ceptara, LLC", STREET=PO Box 12549, L=Mill Creek, S=WA, PostalCode=98082, C=US</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>bHnIcSuh9gJMLTWDeRUnUotj+NQ=</DigestValue></Reference></SignedInfo><SignatureValue>SCg25zwSeFeCjYhmpPjHoYFJbqDXFxYyAR6NAcPgODA8+ItqPUnNbwXpiC0oxe/2gZmpNcxEiSQtZZqWV1026Zy4xX8SrWYtst4mC9dWIdgsShhJ31aykbaIkmWDxDcL8qEI8SillXqIyEPwKHpBAJvlHfsxQ9xQAXpbyBIocsbcio+BWVgPIN6yHKOQWbdo8Gulj1DbBwC99orHZ/EnXlTlBY4tX35Um/1JPty9Ndp1kK4s/3CXHl2EOkZ/2OPy9Oe8Q54/omswS/FMieoTqYwe8SN9FerFz/5SSxINqByGjXI649WyZPMCUrD7qsCWWrbPBi+zNsBgLX8QELRO0w==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>lmHnECGoosmDK74xf03q1UVCpU+DCXjC+FH9q0QR4/+DthrDHCpvHBbagFHWaCtDbnBMa4EefNOF/p7hmBFWz4rZ2PzEYtqX6NR0FutkzOWIvRMwoUudZ4vqGL3KrbzKBG81n6m1S3gqGrJXai2kxH8Byuww7hn9w5+rNEZMGhlGCXHFQKBSzMmKzEf4d/waNcSB5jUPK+UCQHGX2nDCf7Ac0LVk1EZpHYxGt9LGcMQoMbulwu3kxY6/NXTnWB/tdbUXVe+iLqYcTZJomzznsu3x120i4ESzLskMh6BbpmTYOHTC9Zv6GdpqfMUGpTVDd96N7MFH9xbK8Xp4jdBo2w==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIFFjCCA/6gAwIBAgIRAOU8WQeR6mtJrFhDZ2V23r0wDQYJKoZIhvcNAQEFBQAwezELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxITAfBgNVBAMTGENPTU9ETyBDb2RlIFNpZ25pbmcgQ0EgMjAeFw0xMTExMDIwMDAwMDBaFw0xNDExMDEyMzU5NTlaMIGEMQswCQYDVQQGEwJVUzEOMAwGA1UEEQwFOTgwODIxCzAJBgNVBAgMAldBMRMwEQYDVQQHDApNaWxsIENyZWVrMRUwEwYDVQQJDAxQTyBCb3ggMTI1NDkxFTATBgNVBAoMDENlcHRhcmEsIExMQzEVMBMGA1UEAwwMQ2VwdGFyYSwgTExDMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlmHnECGoosmDK74xf03q1UVCpU+DCXjC+FH9q0QR4/+DthrDHCpvHBbagFHWaCtDbnBMa4EefNOF/p7hmBFWz4rZ2PzEYtqX6NR0FutkzOWIvRMwoUudZ4vqGL3KrbzKBG81n6m1S3gqGrJXai2kxH8Byuww7hn9w5+rNEZMGhlGCXHFQKBSzMmKzEf4d/waNcSB5jUPK+UCQHGX2nDCf7Ac0LVk1EZpHYxGt9LGcMQoMbulwu3kxY6/NXTnWB/tdbUXVe+iLqYcTZJomzznsu3x120i4ESzLskMh6BbpmTYOHTC9Zv6GdpqfMUGpTVDd96N7MFH9xbK8Xp4jdBo2wIDAQABo4IBiTCCAYUwHwYDVR0jBBgwFoAUHsWxLH2H2gJofCW8DAeEP7bP3vEwHQYDVR0OBBYEFGvRf2+d4xKdAuxZZElh+sY4SMEsMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMBMGA1UdJQQMMAoGCCsGAQUFBwMDMBEGCWCGSAGG+EIBAQQEAwIEEDBGBgNVHSAEPzA9MDsGDCsGAQQBsjEBAgEDAjArMCkGCCsGAQUFBwIBFh1odHRwczovL3NlY3VyZS5jb21vZG8ubmV0L0NQUzBBBgNVHR8EOjA4MDagNKAyhjBodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9DT01PRE9Db2RlU2lnbmluZ0NBMi5jcmwwcgYIKwYBBQUHAQEEZjBkMDwGCCsGAQUFBzAChjBodHRwOi8vY3J0LmNvbW9kb2NhLmNvbS9DT01PRE9Db2RlU2lnbmluZ0NBMi5jcnQwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTANBgkqhkiG9w0BAQUFAAOCAQEAEXAKh3NERmkXh7mB7VQv15aLRzUxOGVq/bBKWQiP99VL3qc/7ERVClWkMgjliSsSx+mP8dAxIEuLuFv4Kx52oaWanrUW34vE4aKmvkAxn9cUpJRHlXFTxQDD4qYmSNZ+g3zOU1R1rSazlO2Q4XqrrGAaJ2OcLclp0QVNYPkbSK+a44Igfz/ayzZ1e0RE8NtTNKaprsGBxqlLI6yAFLyUeoycGCnDnokc76Wak/H+K/e1af1lUodHF6goFbnLbVZy9WzS1nBEklpiYcXwPbgQV+2dBJjPHYRHaVjcpZI7FNKWn9LMXPSmQ/6zWP8YOsXiejiMPGn5P9Jcmgj2kuo76w==</X509Certificate><X509Certificate>MIIE5zCCA8+gAwIBAgIQEHCdT/VUCNcwYAHY6pF1uzANBgkqhkiG9w0BAQUFADCBlTELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAlVUMRcwFQYDVQQHEw5TYWx0IExha2UgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMSEwHwYDVQQLExhodHRwOi8vd3d3LnVzZXJ0cnVzdC5jb20xHTAbBgNVBAMTFFVUTi1VU0VSRmlyc3QtT2JqZWN0MB4XDTExMDgyNDAwMDAwMFoXDTIwMDUzMDEwNDgzOFowezELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxITAfBgNVBAMTGENPTU9ETyBDb2RlIFNpZ25pbmcgQ0EgMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMv456fo8ZcoQGiAN9LIP46SipI3h0eA6kyZz275FUe97nX0RKzQw9RN9xnA0zxNwUe5WWUWk4zZCoSbn+j2amNY/l/c0X9LUZ8AHACHVCAHV6CCyS+YrzOKu3uAIiVqbK/CLGx5E72jKkjWtY5hVelr6D2AvxQDhRiOfkzpwhmIc5Jyzfr/UE3LLKZ7GnOxAJAs2TLi+/2slUI27DTFE1NossGfQJ/ae8idYmyTokLXeZ+XTzFbUCGhq6/ZHLLOdb5bLFYAJI0RwXUf8P7Slf7w4TEjGGfAWxP9WpiUlP//WQIfAKzm8fL6OnOzHUL8VHXPUTEv49uB2XcjKk9ZziMCAwEAAaOCAUowggFGMB8GA1UdIwQYMBaAFNrtZHQUnBQ8q92Zqb1bKE2LPMnYMB0GA1UdDgQWBBQexbEsfYfaAmh8JbwMB4Q/ts/e8TAOBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBADATBgNVHSUEDDAKBggrBgEFBQcDAzARBgNVHSAECjAIMAYGBFUdIAAwQgYDVR0fBDswOTA3oDWgM4YxaHR0cDovL2NybC51c2VydHJ1c3QuY29tL1VUTi1VU0VSRmlyc3QtT2JqZWN0LmNybDB0BggrBgEFBQcBAQRoMGYwPQYIKwYBBQUHMAKGMWh0dHA6Ly9jcnQudXNlcnRydXN0LmNvbS9VVE5BZGRUcnVzdE9iamVjdF9DQS5jcnQwJQYIKwYBBQUHMAGGGWh0dHA6Ly9vY3NwLnVzZXJ0cnVzdC5jb20wDQYJKoZIhvcNAQEFBQADggEBAJWJd5NoAV582S03B5BdWkJeDGS0NrUP9qvVOSfeIkakSRxmS0YZWS55SQP2nJLfbVA1XAyRLmADWdDxZPdpCfZ+/us0s22xv2aco7oxeLmHNWE9kjEb7/TontasRfoMNjyAZ7u97y7CkOE9cS87wbBYfkXDUnEDB/bzOU2LNiEbAd/Z2l4r6w6XgB5EHFCI9cYSM0qoTaWNL5QMe8a/mizDMs29jCcm8OEwA1AGgrz0O7ODdQbG77ru04D4Usasy3nyOJ57sJJYQpEFyJYhrblLFoEUafE3sP4099yw35f1QxCbdo+0ZfXonxO3HqxvxGmKX7o8YX5eSYYjEy6vFUg=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

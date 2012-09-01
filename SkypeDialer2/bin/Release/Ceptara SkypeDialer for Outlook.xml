@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CeptaraSkypeDialerforOutlook
+</name>
+</assembly>
+<members>
+<member name="M:SkypeDialer2.MySkype.GetBusinessCardImage(Microsoft.Office.Interop.Outlook.ContactItem)">
+	<summary>
+ Returns an image of the Contact's business card.
+ </summary>
+	<param name="oContact">Outlook.ContactItem</param>
+	<returns>Drawing.Image</returns>
+	<remarks></remarks>
+</member><member name="P:SkypeDialer2.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SkypeDialer2.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SkypeDialer2.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:SkypeDialer2.ThisAddIn.#ctor(Microsoft.Office.Tools.Outlook.Factory,System.IServiceProvider)">
+</member><member name="M:SkypeDialer2.ThisAddIn.Initialize">
+</member><member name="M:SkypeDialer2.ThisAddIn.FinishInitialization">
+</member><member name="M:SkypeDialer2.ThisAddIn.InitializeDataBindings">
+</member><member name="M:SkypeDialer2.ThisAddIn.InitializeCachedData">
+</member><member name="M:SkypeDialer2.ThisAddIn.InitializeData">
+</member><member name="M:SkypeDialer2.ThisAddIn.BindToData">
+</member><member name="M:SkypeDialer2.ThisAddIn.StartCaching(System.String)">
+</member><member name="M:SkypeDialer2.ThisAddIn.StopCaching(System.String)">
+</member><member name="M:SkypeDialer2.ThisAddIn.IsCached(System.String)">
+</member><member name="M:SkypeDialer2.ThisAddIn.BeginInitialization">
+</member><member name="M:SkypeDialer2.ThisAddIn.EndInitialization">
+</member><member name="M:SkypeDialer2.ThisAddIn.InitializeControls">
+</member><member name="M:SkypeDialer2.ThisAddIn.InitializeComponents">
+</member><member name="M:SkypeDialer2.ThisAddIn.NeedsFill(System.String)">
+</member><member name="M:SkypeDialer2.ThisAddIn.OnShutdown">
+</member><member name="T:SkypeDialer2.ThisAddIn">
+</member><member name="M:SkypeDialer2.Globals.#ctor">
+</member><member name="T:SkypeDialer2.Globals">
+</member><member name="M:SkypeDialer2.ThisRibbonCollection.#ctor(Microsoft.Office.Tools.Ribbon.RibbonFactory)">
+</member><member name="T:SkypeDialer2.ThisRibbonCollection">
+</member><member name="M:SkypeDialer2.ThisFormRegionCollection.#ctor(System.Collections.Generic.IList{Microsoft.Office.Tools.Outlook.IFormRegion})">
+</member><member name="T:SkypeDialer2.ThisFormRegionCollection">
+</member><member name="M:SkypeDialer2.WindowFormRegionCollection.#ctor(System.Collections.Generic.IList{Microsoft.Office.Tools.Outlook.IFormRegion})">
+</member><member name="T:SkypeDialer2.WindowFormRegionCollection">
+</member>
+</members>
+</doc>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabContact">
+        <group idMso="GroupCommunicate" visible="false" />
+        <group id="GroupSkypeDialer" label="Communicate" insertAfterMso="GroupShow">
+          <button id="btn_SendEmail"
+                  label="E-Mail"
+                  imageMso="NewMessageToContact"
+                  size="large"
+                  screentip="New E-Mail to Contact"
+                  supertip="Create a new message addressed to the contact."
+                  onAction="btn_SendMail" />
+          <button id="btn_LaunchCallManager"
+                  label="Call"
+                  imageMso="AutoDial"
+                  size="large"
+                  screentip="Launch SkypeDialer"
+                  supertip="Call this contact using the Skype Application."
+                  onAction="btn_LaunchCallManager" />
+          <button id="btn_MakeMeeting"
+                  label="Meeting"
+                  imageMso="NewMeetingWithContact"
+                  size="normal"
+                  screentip="Make a Meeting"
+                  supertip="Create a new meeting request addressed to the contact."
+                  onAction="btn_MakeMeeting" />
+          <button id="btn_ContactWebPage"
+                  label="Web Page"
+                  imageMso="ContactWebPage"
+                  size="normal"
+                  screentip="Contact's Web Page"
+                  supertip="Launch contact's web page in the default browser."
+                  onAction="btn_ContactWebPage" />
+          <button id="btn_GetMapSingle" getVisible="btn_GetMapSingle_Visible"
+                  label="Map"
+                  tag="addr_Mailing"
+                  imageMso="MapContactAddress"
+                  size="normal"
+                  screentip="Get Address Map"
+                  supertip="Get a map to contact's mailing address."
+                  onAction="btn_GetMap" />
+          <splitButton id="spbtn_GetMapMultiple" size="normal" getVisible="spbtn_GetMapMultiple_Visible">
+            <button id="btn_Map" label="Map" imageMso="MapContactAddress" 
+                    tag="addr_Mailing" screentip="Get Address Map" 
+                    supertip="Get a map to contact's mailing address." 
+                    onAction="btn_GetMap"/>
+            <menu id="SelectAddress" label="Address Select" itemSize="normal"
+                  screentip="Get Address Map" supertip="Get a map to contact's selected address.">
+              <button id="btn_BusiAddr" label="Business Address" 
+                      tag="addr_business" onAction="btn_GetMap"/>
+              <button id="btn_HomeAddr" label="Home Address" 
+                      tag="addr_Home" onAction="btn_GetMap"/>
+              <button id="btn_OtherAddr" label="Other Address" 
+                      tag="addr_Other" onAction="btn_GetMap"/>
+            </menu>
+          </splitButton>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+

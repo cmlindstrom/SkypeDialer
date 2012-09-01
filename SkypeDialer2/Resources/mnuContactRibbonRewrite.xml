@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabContact">
+        <group idMso="GroupCommunicate" visible="false" />
+        <group id="GroupSkypeDialer" label="Communicate" insertAfterMso="GroupShow">
+          <button id="btn_SendEmail" getVisible="btn_SendEmail_Visible"
+                  label="E-Mail"
+                  imageMso="NewMessageToContact"
+                  size="large"
+                  screentip="New E-Mail to Contact"
+                  supertip="Create a new message addressed to the contact."
+                  onAction="btn_SendMail" />
+          <splitButton id="spbtn_Connect" size="large" getVisible="spbtn_Connect_Visible">
+            <button id="btn_Connect" label="Connect" imageMso="NewMessageToContact"
+                    tag="E-Mail" screentip="Send a message"
+                    supertip="Create a new e-mail message addressed to the contact."
+                    onAction="btn_SendMail"/>
+            <menu id="SelectConnectMethod" label="Connect Via" itemSize="normal"
+                  screentip="Send a message" supertip="Send an email or SMS, or start a chat session.">
+              <button id="btn_SendEmail2" label="Send E-mail" screentip="Send an e-mail"
+                      supertip="Create a new e-mail message addressed to the contact." imageMso="NewMessageToContact"
+                      tag="E-Mail" onAction="btn_SendMail" />
+              <button id="btn_SendSMS" label="Send SMS Message" screentip="Send an SMS" getEnabled="btn_SendSMS_Enabled"
+                      supertip="Send a text message (SMS) to the contact's mobile phone." imageMso="OmsSend"
+                      tag="SMS" onAction="btn_SendSMS" />
+              <button id="btn_StartChat" label="Start Chat" screentip="Start a chat session"
+                      supertip="Start a chat session with this contact." imageMso="AccountMenu"
+                      tag="Chat" onAction="btn_StartChat" />
+            </menu>
+          </splitButton>
+          <button id="btn_LaunchCallManager"
+                  label="Call"
+                  imageMso="AutoDial"
+                  size="large"
+                  screentip="Launch SkypeDialer"
+                  supertip="Call this contact using the Skype Application."
+                  onAction="btn_LaunchCallManager" />
+          <button id="btn_MakeMeeting"
+                  label="Meeting"
+                  imageMso="NewMeetingWithContact"
+                  size="normal"
+                  screentip="Make a Meeting"
+                  supertip="Create a new meeting request addressed to the contact."
+                  onAction="btn_MakeMeeting" />
+          <button id="btn_ContactWebPage"
+                  label="Web Page"
+                  imageMso="ContactWebPage"
+                  size="normal"
+                  screentip="Contact's Web Page"
+                  supertip="Launch contact's web page in the default browser."
+                  onAction="btn_ContactWebPage" />
+          <button id="btn_GetMapSingle" getVisible="btn_GetMapSingle_Visible"
+                  label="Map"
+                  tag="addr_Mailing"
+                  imageMso="MapContactAddress"
+                  size="normal"
+                  screentip="Get Address Map"
+                  supertip="Get a map to contact's mailing address."
+                  onAction="btn_GetMap" />
+          <splitButton id="spbtn_GetMapMultiple" size="normal" getVisible="spbtn_GetMapMultiple_Visible">
+            <button id="btn_Map" label="Map" imageMso="MapContactAddress" 
+                    tag="addr_Mailing" screentip="Get Address Map" 
+                    supertip="Get a map to contact's mailing address." 
+                    onAction="btn_GetMap"/>
+            <menu id="SelectAddress" label="Address Select" itemSize="normal"
+                  screentip="Get Address Map" supertip="Get a map to contact's selected address.">
+              <button id="btn_BusiAddr" label="Business Address" 
+                      tag="addr_business" onAction="btn_GetMap"/>
+              <button id="btn_HomeAddr" label="Home Address" 
+                      tag="addr_Home" onAction="btn_GetMap"/>
+              <button id="btn_OtherAddr" label="Other Address" 
+                      tag="addr_Other" onAction="btn_GetMap"/>
+            </menu>
+          </splitButton>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+

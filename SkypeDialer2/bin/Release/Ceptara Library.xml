@@ -1,0 +1,928 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CeptaraLibrary
+</name>
+</assembly>
+<members>
+<member name="M:Ceptara.Drawing.GetImageFromURL(System.String)">
+	<summary>
+ Returns an image from a given URL.
+ </summary>
+	<param name="URL">URL that passes back an image.</param>
+	<returns>Drawing.Image</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Drawing.GetImageFromURLUsingPost(System.String,System.String)">
+	<summary>
+ Returns an image from a specified URL and provided POST string.
+ </summary>
+	<param name="URL">URL to call, e.g. Google Charts</param>
+	<param name="postString">String to pass in the POST</param>
+	<returns>Drawing.Image</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Drawing.GetCurrentScreenResolution">
+	<summary>
+ Get the current default screen's resolution as an x,y point
+ </summary>
+	<returns>Drawing.Point</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetCurrentScreenResolution">
+	<summary>
+ Retrieve's the current screens horizontal (X) and vertical (Y) dimensions.
+ </summary>
+	<returns>Drawing Point or Nothing</returns>
+	<remarks>Returns:
+ X: Integer
+ Y: Integer</remarks>
+</member><member name="M:Ceptara.SystemInterface.GoToWebPage(System.String,System.String)">
+	<summary>
+ Returns a web browser form that 'fits' the screen and navigates to the specified page.
+ </summary>
+	<param name="strURL">Fully qualified URL</param>
+	<param name="strTitle">Windows title</param>
+	<returns>Windows.Forms.Form</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GoToWebPageUsingDefaultBrowser(System.String)">
+	<summary>
+ Launches the default web browser and navigates to the specified URL.
+ </summary>
+	<param name="strURL">Fully qualified URL</param>
+	<returns>Integer: Session ID of the started process, -1 if an error occurs.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetImageFromURL(System.String)">
+	<summary>
+ Returns an image from a specified URL (which returns an image object)
+ </summary>
+	<param name="URL">Fully qualified URL</param>
+	<returns>Drawing Image</returns>
+	<remarks>Very useful in working with Google Charts</remarks>
+</member><member name="M:Ceptara.SystemInterface.GetImageFromURLUsingPost(System.String,System.String)">
+	<summary>
+ Returns an image from a specified URL and provided POST string.
+ </summary>
+	<param name="URL">URL to call, e.g. Google Charts</param>
+	<param name="postString">String to pass in the POST</param>
+	<returns>Drawing.Image</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.IsProcessRunning(System.String)">
+	<summary>
+ Returns a boolean value depicting if a named process is running on the system.
+ </summary>
+	<param name="strProcessName">Name of the process, e.g. OUTLOOK.EXE</param>
+	<returns>Boolean: True if found.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.RunProgramFromFile(System.String)">
+	<summary>
+ Used to start an application by passing a full file name to process.start
+ </summary>
+	<param name="strFileFullPath">Fully qualified file name</param>
+	<returns>Integer: Session ID for the started process</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetFileIcon(System.String,System.UInt32)">
+	<summary>
+ Used to return the O/S icon associated with the specified file.
+ </summary>
+	<param name="FullFilePath">Fully qualified file path name</param>
+	<param name="flags">SHGFI_LARGEICON or SHGFI_SMALLICON</param>
+	<returns>Drawing.Icon</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.FileExists(System.String)">
+	<summary>
+ Assesses if a specified file exists in the O/S folder system.
+ </summary>
+	<param name="FileName">File to evaluate</param>
+	<returns>Boolean: True if file found</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.DirectoryExists(System.String)">
+	<summary>
+ Assesses if a specified directory exists in the O/S folder system.
+ </summary>
+	<param name="FolderName">Directory file path</param>
+	<returns>Boolean: True if found</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.DeleteFile(System.String)">
+	<summary>
+ Deletes the specified file.
+ </summary>
+	<param name="FileName">Fully qualified file name</param>
+	<returns>Boolean: True if successful.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.RenameFile(System.String,System.String)">
+	<summary>
+ Renames the Old filename to the New filename.
+ </summary>
+	<param name="strOldFullFileName">Fully qualified path to the old file</param>
+	<param name="strNewFullFileName">Fully qualified path to the new file</param>
+	<returns>Boolean: True if successful</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetFileSize(System.String)">
+	<summary>
+ Returns the size of the file in bytes.
+ </summary>
+	<param name="FileName">Fully qualified file path</param>
+	<returns>Long: 0 if file doesn't exist, -1 if an error occurred otherwise the size of the file.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.CleanFileName(System.String,System.String)">
+	<summary>
+  This function is used to remove any offending File OS characters that can cause an error in renaming a file, i.e.
+       "/ ? &lt; &gt; \ : * | "
+ </summary>
+	<param name="FileName">Filename to evalute</param>
+	<param name="delimeter">Replacement character, e.g. "_"</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.IsCleanFileName(System.String)">
+	<summary>
+ This function checks to see if a desired file name has any illegal characters, i.e. / ? &lt; &gt; \ : * | "
+ </summary>
+	<param name="strFileName"></param>
+	<returns>Returns True if the file name has no illegal characters</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetFolderFiles(System.String,System.String)">
+	<summary>
+ Used to retrieve the files in a folder using a specified search criteria.
+ </summary>
+	<param name="strDirectoryName">Folder path</param>
+	<param name="strSearchCriteria">Search criteria, e.g. "*.xls"</param>
+	<returns>ArrayList containing the full file path for each file found</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetFolderDirectories(System.String,System.String)">
+	<summary>
+ Used to retrieve the sub-folder names in a folder using the specified search criteria.
+ </summary>
+	<param name="strDirectoryName">Folder path</param>
+	<param name="strSearchCriteria">Search criteria, e.g. "abc"</param>
+	<returns>ArrayList containing the full path names for the return folder path strings</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetFileDOLC(System.String)">
+	<summary>
+ Returns the last modify date (DOLC - date of last change) for a specified file.
+ </summary>
+	<param name="strFileName">Fully qualified file path</param>
+	<returns>Date: 1/1/1970 if an error occurs, otherwise DOLC</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetFileType(System.String)">
+	<summary>
+ Used to retrieve a specified file's file type name.
+ </summary>
+	<param name="InputFileName">Specified input file</param>
+	<returns>String: Files type string, returns empty if an error occurs</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetDefaultFilename(System.String,System.String)">
+	<summary>
+ Function used to return a default filename is the form: yyyymmdd [filenameText].[extension]
+ </summary>
+	<param name="FilenameText">Filename starter text</param>
+	<returns>String: New filename or an empty string if an error occurs.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetProgramFilesDirectoryPath">
+	<summary>
+ Get the default Program Files Directory Path
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetUserApplicationDataDirectoryPath">
+	<summary>
+ Get the user's application data directory path.
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetUserTemporaryDirectoryPath">
+	<summary>
+ Gets the user's temporary cache (Internet Cache) directory path.
+ </summary>
+	<returns>String: Path or empty if an error occurs</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetUserMyDocumentsDirectoryPath">
+	<summary>
+ Get user's 'My Documents' directory path.
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetApplicationRootPath">
+	<summary>
+ Used to return a path to the application's root directory.  Based on where the user's Data Directory path lies.
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetApplicationDataPath">
+	<summary>
+ Used to return a path to the application's data directory.
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetApplicationBackupPath">
+	<summary>
+ Used to return a path to the application's backup directory.
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetApplicationTemporaryCachePath">
+	<summary>
+ Used to return a path to the application's temporary cache directory.
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetApplicationSystemPath">
+	<summary>
+ Used to return a path to the application's system directory.
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetApplicationUserDocumentsPath">
+	<summary>
+ Used to return a path to the user's My Documents folder for this specific application.
+ e.g. c:\users\[name]\Documents\[CompanyName]\[AppName]
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetApplicationMajorVersion">
+	<summary>
+ Returns the major version number for the application's version string.
+ e.g. Version = 3.5.1008.1, routine would return 3.
+ </summary>
+	<returns>String: returns empty if an error occurs</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetConfiguredProxy(System.Boolean,System.String,System.Int32,System.Boolean,System.String,System.String,System.String)">
+	<summary>
+ Routine used to configure and return a web proxy object, 
+ using system default where not specified.
+ </summary>
+	<param name="bUseProxy">Use a proxy, T or F</param>
+	<param name="Host">Proxy System Host Name</param>
+	<param name="Port">Proxy Port</param>
+	<param name="bUseDefaultCredentials">Use default credentials, T or F</param>
+	<param name="Username">Proxy Username</param>
+	<param name="Password">Proxy Password</param>
+	<param name="Domain">Proxy Domain</param>
+	<returns>Configured System.Net.WebProxy</returns>
+	<remarks>Sometimes networks set up proxies for domains that may or may not match the user's credentials used on the specific PC.</remarks>
+</member><member name="M:Ceptara.SystemInterface.GetDefaultProxyHost">
+	<summary>
+ Retrieves the default proxy host, if one exists.
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetDefaultProxyPort">
+	<summary>
+ Gets the default proxy port, if a proxy exists
+ </summary>
+	<returns>String, if error returns an empty string</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetDefaultProxyFullPath">
+	<summary>
+ Returns a proxy's full path, e.g. http://myproxy:80
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.ProxyEnabled">
+	<summary>
+ USed to evaluate if the default browser has a proxy enabled
+ </summary>
+	<returns>Boolean: True if one exists, False if not or an error occurred</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.GetLoadedAssemblies">
+	<summary>
+ Returns a list of loaded assemblies.
+ </summary>
+	<returns>ArrayList containing the assembly's name and full name</returns>
+	<remarks>Example return value = Organizer|Organizer, Version=3.5.1001.5, Culture=neutral, PublicKeyToken=a1ebd1f7ade37c2e</remarks>
+</member><member name="M:Ceptara.SystemInterface.GetSystemIcon(Ceptara.SystemInterface.enuSystemIcons)">
+	<summary>
+ Routine used to retrieve a system icon by name.
+ </summary>
+	<param name="IconName">Enumerated value from enuSystemIcons to specify the icon needed</param>
+	<returns>Drawing.Icon or Nothing if error</returns>
+	<remarks>Possible values: Application, Asterisk, Error, Exclamation, Hand, Information, Question, Warning, WinLogo, Shield</remarks>
+</member><member name="M:Ceptara.SystemInterface.GetMacAddress">
+	<summary>
+ This function returns the first found active NIC's MAC Address.
+ </summary>
+	<returns>String</returns>
+	<remarks>Looks for an active 'Ethernet' adapter and returns the MAC Address as a string</remarks>
+</member><member name="M:Ceptara.SystemInterface.ShowWindow(System.Int32,Ceptara.SystemInterface.enuShowWindowFlags)">
+	<summary>
+ Used to show a previously instantiated form window.  Must track the Window handle (hwnd).
+ </summary>
+	<param name="hwnd">Window Handle</param>
+	<param name="ShowCommand">enuShowWindowFlags Value</param>
+	<returns>Integer: 1 if successful otherwise 0.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.SystemInterface.FindWindow(System.String)">
+	<summary>
+ Used to find a O/S Window by name (caption?)
+ </summary>
+	<param name="WindowName">Window Caption</param>
+	<returns>Integer: 1 if successful otherwise 0</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Common.IsDevComputer(System.String)">
+	<summary>
+ Function used to tell the application if it's being executed on a development computer.
+ </summary>
+	<param name="ComputerName">ComputerName to check</param>
+	<returns>Boolean: True if computer marked as dev otherwise false</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Data.Database.ConvertTableToString(System.Data.DataTable)">
+	<summary>
+ Creates a string representing a Datatable.
+ </summary>
+	<param name="table">DataSet.DataTable</param>
+	<returns>String</returns>
+	<remarks>Useful for analyzing unknown datatables in a dataset, e.g. as read by an XML action.</remarks>
+</member><member name="M:Ceptara.Data.Database.Export(System.Object,System.String,Ceptara.Data.Database.enuFileFormat)">
+	<summary>
+ Function used to export a DataSet or DataTable to an O/S file in a CSV, XML, or JSON.
+ </summary>
+	<param name="DataObject">DataSet or DataTable</param>
+	<param name="ExportFilePathName">Fully qualified file name, e.g. c:\users\chris\documents\myfile.csv</param>
+	<param name="FileFormat">enuFileFormat = CSV, XML or JSON</param>
+	<returns>String: Filename of the exported data.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Data.Database.ConvertTableToJSON(System.Data.DataTable)">
+	<summary>
+ Function used to convert a DataTable to a JSON String
+ </summary>
+	<param name="inputTable">DataTable</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Data.Database.ConvertDataSetToJSON(System.Data.DataSet)">
+	<summary>
+ Function used to convert a DataSet to a JSON String
+ </summary>
+	<param name="dataSet">DataSet</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Data.Database.ConvertJSONToTable(System.String)">
+	<summary>
+ Function used to convert a JSON String to a DataTable
+ </summary>
+	<param name="jsonString">JSON String to convert</param>
+	<returns>DataTable</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Data.Database.ConvertTableToCSVString(System.Data.DataTable)">
+	<summary>
+ Function used to convert a DataTable to a CSV formatted string.
+ </summary>
+	<param name="dataTable">DataTable</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Data.Database.CreateCSVString(System.Data.DataTable)">
+	<summary>
+ Create a CSV string representing a table in a DataSet.
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Data.Database.CreateJSONString(System.Data.DataSet)">
+	<summary>
+ Create a JSON string representing a DataSet.
+ </summary>
+	<returns>String: JSON Format</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Data.Database.CreateXMLString(System.Data.DataSet)">
+	<summary>
+ Create an XML string representing the DataSet.
+ </summary>
+	<returns>String: XML Format</returns>
+	<remarks></remarks>
+</member><member name="T:Ceptara.dsWallet.WalletDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Ceptara.dsWallet.AccountsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Ceptara.dsWallet.AccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Ceptara.dsWallet.WalletRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Ceptara.dsWallet.AccountsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Ceptara.dsWallet.AccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Ceptara.dsWallet.WalletRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Ceptara.dsWallet.AccountsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Ceptara.dsWallet.AccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Ceptara.dsWallet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Ceptara.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Ceptara.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Ceptara.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Ceptara.Localization.LanguagePack.SaveLanguagePack(System.String)">
+	<summary>
+ Saves the loaded Language Pack class items to a specified XML file.
+ </summary>
+	<param name="filename">Any qualified full file path</param>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Localization.LanguagePack.LoadLanguagePack(System.String)">
+	<summary>
+ Loads the Language Pack items from a named XML file.
+ </summary>
+	<param name="filename">Any fully qualified file path.</param>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Localization.LanguagePack.GetTextUsingName(System.String)">
+	<summary>
+ Gets the localized text given a control name.
+ </summary>
+	<param name="ControlFriendlyName">[form_name].[control_name].[Property]</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Localization.LanguagePack.GetItemUsingName(System.String)">
+	<summary>
+ Returns a localized artifact including the localized text.
+ </summary>
+	<param name="ControlFriendlyName">[form_name].[control_name].[Property]</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Localization.LanguagePack.CreateDataSet">
+	<summary>
+ CreateDataSet - creates an data set from the Language Pack collection.
+ </summary>
+	<returns>DataSet</returns>
+	<remarks>Dataset design:
+            Table "Languages" - table contains the languages loaded in the Language Pack
+               Locale, Name
+            Table "Artifacts" - table contains the artifacts
+               Locale, Text, Name
+ </remarks>
+</member><member name="P:Ceptara.Localization.LocalizationArtifact.Locale">
+	<summary>
+ Each artifact belongs to a locale, e.g. en-US, en-GB
+ </summary>
+	<value></value>
+	<returns>string</returns>
+	<remarks></remarks>
+</member><member name="P:Ceptara.Localization.LocalizationArtifact.Text">
+	<summary>
+ The text the language artifact contains.
+ </summary>
+	<value></value>
+	<returns>string</returns>
+	<remarks></remarks>
+</member><member name="P:Ceptara.Localization.LocalizationArtifact.ControlFriendlyName">
+	<summary>
+ The Control's Friendly Name is the [control's parent form].[control name].[property].
+ </summary>
+	<value>string</value>
+	<returns>string</returns>
+	<remarks>e.g. "frmOption.btn_Start.Text" or "frmMain.Text" or "frmMain.btn_Start.Text"</remarks>
+</member><member name="M:Ceptara.Localization.CultureInformation.GetLocalizationSpec(System.String)">
+	<summary>
+ Used to retrieve a Localization Specification articulating time and date information for a specified culture.
+ </summary>
+	<param name="strLocale">Locale to check, e.g. en-US</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Localization.CultureInformation.GetLocalizedFullDateTime(System.DateTime)">
+	<summary>
+ Returns a Full Date Time string for the specified date in the current culture's as defined by
+ My.Application.Culture.Name
+ </summary>
+	<param name="dtInput">Date to display</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Localization.CultureInformation.GetLocalizedDelimiter">
+	<summary>
+ Returns the Delimiter for the current culture as specified by the Application culture.
+ </summary>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Ceptara.Forms.frmHTMLPrint.AddressURL">
+	<summary>
+ Address to navigate to when the form is loaded.
+ </summary>
+	<value></value>
+	<returns>Fully qualified URL</returns>
+	<remarks>Often this is a file with contents in an HTML form.</remarks>
+</member><member name="M:Ceptara.Text.TextProcessing.EncryptPassword(System.String)">
+	<summary>
+ Encrypt's text using a 'seed' value to obfuscate the hex values.
+ </summary>
+	<param name="Password">Text to encrypt</param>
+	<returns>Encrypted string</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Text.TextProcessing.DecryptPassword(System.String)">
+	<summary>
+ Decrypts a previously encrypted text string.
+ </summary>
+	<param name="EncodedPassword">Encrypted text string</param>
+	<returns>String: Empty if an error occurred</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Text.TextProcessing.EncodeText(System.Object)">
+	<summary>
+ Encodes text that is passed via HTTP get or post.
+ </summary>
+	<param name="vSubject">Text to be encoded</param>
+	<returns>Encoded String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Text.TextProcessing.DecodeText(System.Object)">
+	<summary>
+ Decodes text that was received from an internet service call that may have HTTP encoding
+ </summary>
+	<param name="vSubject">Text to decode</param>
+	<returns>Decoded String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Text.TextProcessing.GetKeyValueFromString(System.String,System.String,System.Char)">
+	<summary>
+ Date: 2010-11-23: Parses out a value from a key/value pair message, e.g. "Error=BadAuthentication"
+ </summary>
+	<param name="Message">Text to parse.</param>
+	<param name="Key">String references the key of interest.</param>
+	<param name="Delimiter">Delimeter used to separate the key/value pairs, default is chr(10) ' linefeed</param>
+	<returns>String: Value in Key/Value pair, if error returns an empty string.</returns>
+	<remarks>Input message can contain one or more lines of key/value pairs, 
+ e.g. Key1=Value1 {cr/lf} Key2=Value2 {cr/lf} Key3=Value3 OR an HTTP Query String</remarks>
+</member><member name="M:Ceptara.Text.TextProcessing.PreProcessXMLInternational(System.String)">
+	<summary>
+ Used for parsing through an XML or JSON stream and massaging expressions that are not 
+ recognized by Microsoft's XML reader.
+ </summary>
+	<param name="strInput">Text to Process</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Text.TextProcessing.PreProcessXML(System.String)">
+	<summary>
+ Used to process strings before they are placed into an XML feed
+ </summary>
+	<param name="strInput">String to transform.</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Text.TextProcessing.PostProcessXML(System.String)">
+	<summary>
+ Used to process strings as they are read from an XML file
+ </summary>
+	<param name="strInput">String to transform.</param>
+	<returns>string</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Text.TextProcessing.ParseSearchWords(System.String)">
+	<summary>
+ Parses a string and assembles 'searchable' words
+ </summary>
+	<param name="strIn">Text to parse</param>
+	<returns>Keywords from the parsed text</returns>
+	<remarks></remarks>
+</member><member name="P:Ceptara.Text.CSVExporter.HasColumnHeaders">
+	<summary>
+ Set if the output CSV includes a header row.
+ </summary>
+	<value>Boolean: True if headers are to be included.</value>
+	<returns>Boolean: True if headers are included.</returns>
+	<remarks></remarks>
+</member><member name="P:Ceptara.Text.CSVExporter.TextQualifier">
+	<summary>
+ The 'Text Qualifier' is the character used to frame each value within the csv row.
+ </summary>
+	<value>Text Qualifier character to use.</value>
+	<returns>Text Qualifier character.</returns>
+	<remarks></remarks>
+</member><member name="P:Ceptara.Text.CSVExporter.TextDelimiter">
+	<summary>
+ The 'Text Qualifier' is the character used between values within the csv row.
+ </summary>
+	<value>Text Delimiter to use</value>
+	<returns>Text Delimiter</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Text.CSVExporter.GetCsvFromDataTable(System.Data.DataTable)">
+	<summary>
+ Converts a DataTable (as specified within a DataSet) to a CSV formatted string.
+ </summary>
+	<param name="InputTable">DataTable</param>
+	<returns>String: CSV format</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Text.CSVExporter.CreateRows(System.Data.DataTable,System.Text.StringBuilder)">
+	<summary>
+ Create the CSV rows and append to the stringbuilder.
+ </summary>
+	<param name="InputTable">DataTable</param>
+	<param name="CsvBuilder">StringBuilder</param>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Text.CSVExporter.CreateHeader(System.Data.DataTable,System.Text.StringBuilder)">
+	<summary>
+ Create the Header row for the CSV string.
+ </summary>
+	<param name="InputTable">DataTable</param>
+	<param name="CsvBuilder">StringBuilder</param>
+	<remarks></remarks>
+</member><member name="P:Ceptara.AdvancedMath.BayesLearningConstant">
+	<summary>
+ Bayes Learning constant, initialized to 0.01
+ </summary>
+	<value>Set a new value</value>
+	<returns>Double</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.AdvancedMath.WholeNumber(System.Double)">
+	<summary>
+ Function used to return a whole number on the left side of the decimal point without rounding.
+ </summary>
+	<param name="dblInput"></param>
+	<returns></returns>
+	<remarks>Example Returns:
+ 3.46 returns 3
+ 3.22 returns 3     Cint would return 3
+ 3.65 returns 3     Cint would return 4</remarks>
+</member><member name="M:Ceptara.AdvancedMath.AverageBayes(System.Double,System.Double,System.Int64)">
+	<summary>
+ Function used to calculate a Bayesian average statistic.
+ </summary>
+	<param name="dblNewMeasure">New observed value</param>
+	<param name="dblPreviousMeasure">Previous Average</param>
+	<param name="lSampleCount"># of observations including this one</param>
+	<returns>Double</returns>
+	<remarks>This function is useful in tracking a population's mean when all observations are not stored or collected.
+ e.g. Provides a learning algorithm in calculating how long something takes when recording the observed elapsed time for every
+ sample, such as copying a file - can be very useful in predicting how long the entire file might take to copy in it's
+ entirety.</remarks>
+</member><member name="M:Ceptara.AdvancedMath.RoundHrs(System.Double@,System.Double)">
+	<summary>
+ Function used to round a real number (e.g. Hours on a timecard) to the nearest increment.
+ </summary>
+	<param name="inHrs">Incoming real number</param>
+	<param name="dblInc">Increment, e.g. 0.1</param>
+	<returns>Double</returns>
+	<remarks>The function always rounds up to the next increment.</remarks>
+</member><member name="T:Ceptara.DateFunctions.enuDayOfWeek">
+	<summary>
+ Enumerates integers that represent the day of the week.
+ </summary>
+	<remarks>For example, Sunday = 1, Monday = 2, etc.</remarks>
+</member><member name="M:Ceptara.DateFunctions.LastDayOfTheWeek(System.DateTime,Ceptara.DateFunctions.enuDayOfWeek)">
+	<summary>
+ Returns the date of the 'Last day of the week' given any input date.
+ </summary>
+	<param name="dteIn">Date to evalute</param>
+	<param name="DayOfWeek">Selected end of the week day</param>
+	<returns>Date</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.LastDayofTheMonth(System.DateTime)">
+	<summary>
+ Returns the date of the 'Last day of the month' given any input date.
+ </summary>
+	<param name="dteIn">Date to evalute</param>
+	<returns>Date</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.IsLastDayOfTheMonth(System.DateTime)">
+	<summary>
+ Returns true if provided date is the last day of a month.
+ </summary>
+	<param name="inDate">Date of Interest</param>
+	<returns>Boolean: True if last day of the month, otherwise False if not or an error occurs.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.DaysInAMonth(System.DateTime)">
+	<summary>
+ Returns the number of days in a month for a specified input date.
+ </summary>
+	<param name="dteIn">Date to evalute</param>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.ConvertToUNIXTime(System.Object)">
+	<summary>
+  Converts a local date/time to universal Unix timestamp.
+ </summary>
+	<param name="dtDateToChange"></param>
+	<returns>Long (# of seconds since 1/1/1970 12:00 AM)</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.ConvertFromUnixTime(System.Int64)">
+	<summary>
+ Converts a UNIX timestamp (number) to a Date
+ </summary>
+	<param name="lRelativeSeconds">Number of seconds</param>
+	<returns>Date</returns>
+	<remarks>Adds the passed # of seconds to 1/1/1970 12:00 AM to return a date.</remarks>
+</member><member name="M:Ceptara.DateFunctions.Day(System.DateTime)">
+	<summary>
+ Missing VB function for returning the Day for a specified date.
+ </summary>
+	<param name="dteIn">Input Date</param>
+	<returns>Integer</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.GetDateFileStamp(System.DateTime)">
+	<summary>
+ Returns a datestamp (e.g. 20111007 for 10/7/2011).
+ </summary>
+	<param name="dtDate">Input Date</param>
+	<returns>String</returns>
+	<remarks>Useful for annotating file names with a sortable datestamp</remarks>
+</member><member name="M:Ceptara.DateFunctions.GetCMLTime(System.DateTime)">
+	<summary>
+ Used to obfuscate dates, making it difficult to glean it's true value.
+ </summary>
+	<param name="dtDateToEvaluate">Input date</param>
+	<returns>Long: # of seconds or -1 if an error occurs</returns>
+	<remarks>Returns the number of seconds from a secret date to the input date</remarks>
+</member><member name="M:Ceptara.DateFunctions.SetCMLTime(System.Int64)">
+	<summary>
+ Returns a date from a previously obfuscated date.
+ </summary>
+	<param name="lRelativeSeconds">Relative Seconds</param>
+	<returns>Date: Calculated date or Nothing if an error occurs</returns>
+	<remarks>Recalculates a date by using the # of relative seconds from a secret date.</remarks>
+</member><member name="M:Ceptara.DateFunctions.IsDateNone(System.DateTime)">
+	<summary>
+ Returns true if the date is 1/1/1970 or 1/1/4501 (two dates often used in Ceptara's applications)
+ </summary>
+	<param name="inDate">Date to check</param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.CeptaraDateStr(System.DateTime)">
+	<summary>
+ Returns a formatted date using the "ShortDate" format unless the date is 1/1/1970 or 1/1/4501 then "None" is returned.
+ </summary>
+	<param name="inDate">Date to Check</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.CombineDateTimeFromStrings(System.String,System.String)">
+	<summary>
+ Combines a date string with a time string and returns a Date
+ </summary>
+	<param name="strInDate">Formatted date string</param>
+	<param name="strInTime">Formatted time string</param>
+	<returns>Date: Returns 1/1/4501 if an error occurs</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.CombineDateTimeFromDates(System.DateTime,System.DateTime)">
+	<summary>
+ Combines a date (represented as a date) and a time (represented as a date).
+ </summary>
+	<param name="dteInDate">Date</param>
+	<param name="dteInTime">Time</param>
+	<returns>Date: returns 1/1/4501 if an error occurs</returns>
+	<remarks>Used in the ToodleDo connector.</remarks>
+</member><member name="M:Ceptara.DateFunctions.GetDateOnly(System.DateTime)">
+	<summary>
+ Returns the date portion of an input date.
+ </summary>
+	<param name="dteIn">Date to evaluate</param>
+	<returns>Date: returns 1/1/4501 if error</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.IsTimeEqual(System.DateTime,System.DateTime)">
+	<summary>
+ Function used to check if two dates' times are identical.  Ignores the date component.
+ </summary>
+	<param name="dteDate1">Date1</param>
+	<param name="dteDate2">Date2</param>
+	<returns>Boolean: T if equal</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.IsDateEqual(System.DateTime,System.DateTime)">
+	<summary>
+ Function used to check if two dates are identical. Ignores the time component.
+ </summary>
+	<param name="dteDate1">Date1</param>
+	<param name="dteDate2">Date2</param>
+	<returns>Boolean: True if identical; False if not or error</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.Is24HourClock">
+	<summary>
+ Function returns true if a 24 hour clock is used in the current culture.
+ </summary>
+	<returns>Boolean: True if 24 hour, False if not or error</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.Get12HourShortTime(System.DateTime)">
+	<summary>
+ Function used to return the 12 Hour ShortTime.
+ </summary>
+	<param name="dteIn"></param>
+	<returns>String: Empty if error occurs</returns>
+	<remarks>Assumes the 'American' representation, e.g. 12:00 AM</remarks>
+</member><member name="M:Ceptara.DateFunctions.IsSameWeek(System.DateTime,System.DateTime)">
+	<summary>
+ Function returns true if Date1 is within the same week as Date2.
+ </summary>
+	<param name="Date1">Input Date</param>
+	<param name="Date2">Date within the week of Interest</param>
+	<returns>Boolean: True if same week, otherwise False if not or an error occurs.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.DateFunctions.IsSameMonth(System.DateTime,System.DateTime)">
+	<summary>
+ Function returns true if Date1 is within the same month as Date2.
+ </summary>
+	<param name="Date1"></param>
+	<param name="Date2"></param>
+	<returns>Boolean: True if same month, otherwise False if not or error occurs.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.ErrorHandling.ErrorLogger(System.String,System.Int64,System.String)">
+	<summary>
+ Logs an error to the specified log file.
+ </summary>
+	<param name="strMessage">Message to log</param>
+	<param name="ErrNumber">Error code number</param>
+	<param name="OriginatingRoutine">Routine where the error was found</param>
+	<returns>Boolean: True if successful, otherwise returns false</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.ErrorHandling.TraceLogger(System.String,System.String)">
+	<summary>
+ Logs a trace error to the specified log file.
+ </summary>
+	<param name="strAction">Action being performed + ex.StackTrace</param>
+	<param name="OriginatingRoutine">Calling Routine</param>
+	<returns>Boolean: True if successful</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.ErrorHandling.TraceLogger(System.String,System.Exception,System.String)">
+	<summary>
+ Logs a verbose trace error using the specified Exception to the class specified log file."
+ </summary>
+	<param name="CallingException">Exception</param>
+	<param name="OriginatingRoutine">Calling Routine</param>
+	<returns>Boolean: True if successful</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.ErrorHandling.TraceLogger(System.Net.WebResponse,System.String)">
+	<summary>
+ Logs a trace error for a HTTP web request - response.
+ </summary>
+	<param name="rsp">System.Net.WebResponse</param>
+	<param name="OriginatingRoutine">Calling Routine</param>
+	<returns>Boolean: True if successful</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.ErrorHandling.SyncLogger(System.String,System.String,System.String)">
+	<summary>
+ Logs a sync trace message - useful when interfacing with external services, especially via SaaS calls.
+ </summary>
+	<param name="strAction">Action</param>
+	<param name="strMessage">Message</param>
+	<param name="OriginatingRoutine">Calling Routine</param>
+	<returns>Boolean: True if successful</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.Google.GoogleService.FromGGString(System.Object)">
+ Conversion Routines
+
+</member><member name="M:Ceptara.Google.GoogleCalendar.QueryCalendars">
+	<summary>
+		<para>Query the users full calendar set from Google Calendar.</para>
+	</summary>
+</member><member name="P:Ceptara.NetInterface.NetSpeed">
+	<summary>
+ Returns the network speed calculated from a Ping event in bytes per second
+ </summary>
+	<value></value>
+	<returns>Double</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.NetInterface.IsConnectedToInternet">
+	<summary>
+ Method to assess if local computer is connected to the Internet
+ </summary>
+	<returns>Boolean: True if connected.</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.NetInterface.PingAddress(System.String)">
+	<summary>
+ Function pings a given address (such as 'www.ceptara.com' or '67.252.13.2') and returns
+ the roundtrip time in milliseconds.
+ </summary>
+	<param name="IPAddressString">Network Address</param>
+	<returns>Long: # if successful otherwise -1</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.NetInterface.GetNetworkGatewayIPAddress">
+	<summary>
+ Returns the IP address of the current network's gateway device, e.g. router.
+ </summary>
+	<returns>String: e.g. '192.168..1'</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.NetInterface.GoToWebPageUsingDefaultBrowser(System.String)">
+	<summary>
+ Opens a given URL using the default O/S browser
+ </summary>
+	<param name="strURL">URL to visit</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.NetInterface.GetGatewayIPAddress">
+	<summary>
+ Returns the Network Gateway IP Address (usually the router or DHCP server that provided the IP address)
+ </summary>
+	<returns>String: Example "192.168.0.1"</returns>
+	<remarks></remarks>
+</member><member name="M:Ceptara.NetInterface.GetNICs">
+	<summary>
+ Returns the network adapters installed in the computer.
+ </summary>
+	<returns>ArrayList filled TypeOf NetworkInterface</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

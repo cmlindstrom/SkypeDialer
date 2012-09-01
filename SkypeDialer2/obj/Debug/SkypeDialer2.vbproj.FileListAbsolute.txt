@@ -1,0 +1,30 @@
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Ceptara Library.dll
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Newtonsoft.Json.Net20.dll
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Ceptara Library.pdb
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Ceptara Library.xml
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Microsoft.Office.Tools.Outlook.v4.0.Utilities.xml
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Newtonsoft.Json.Net20.xml
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Interop.SKYPE4COMLib.dll
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\ResolveAssemblyReference.cache
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\Interop.SKYPE4COMLib.dll
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\SkypeDialer2.vbproj.ResolveComReference.cache
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\SkypeDialer2.dlgDialPad.resources
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\SkypeDialer2.frmCallManager.resources
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\SkypeDialer2.Resources.resources
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\GenerateResource.read.1.tlog
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\GenerateResource.write.1.tlog
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\SkypeDialer2.dlgOptions.resources
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Ceptara SkypeDialer for Outlook.dll.config
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Ceptara SkypeDialer for Outlook.dll
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Ceptara SkypeDialer for Outlook.pdb
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Ceptara SkypeDialer for Outlook.xml
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Ceptara SkypeDialer for Outlook.dll.manifest
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\bin\Debug\Ceptara SkypeDialer for Outlook.vsto
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\Ceptara SkypeDialer for Outlook.dll
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\Ceptara SkypeDialer for Outlook.xml
+c:\users\chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\Ceptara SkypeDialer for Outlook.pdb
+C:\Users\Chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\Ceptara SkypeDialer for Outlook.g.resources
+C:\Users\Chris\documents\visual studio 2010\Projects\SkypeDialer2\SkypeDialer2\obj\Debug\SkypeDialer2.frmChatManager.resources
